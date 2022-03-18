@@ -51,7 +51,7 @@
  */
 static inline unsigned int kdbus_strhash(const char *str)
 {
-	unsigned long hash = init_name_hash();
+	unsigned long hash = init_name_hash(str);
 
 	while (*str)
 		hash = partial_name_hash(*str++, hash);

@@ -972,11 +972,12 @@ static int kdbus_conn_wait_reply(struct kdbus_conn *conn_src,
 			break;
 		}
 
+    /*
 		if (!poll_schedule_timeout(&pwq, TASK_INTERRUPTIBLE,
 					   &expire, 0)) {
 			ret = -ETIMEDOUT;
 			break;
-		}
+		}*/
 
 		/*
 		 * Reset the poll worker func, so the waitqueues are not

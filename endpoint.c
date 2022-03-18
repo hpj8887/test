@@ -21,6 +21,7 @@
 #include <linux/slab.h>
 #include <linux/uaccess.h>
 #include <linux/uio.h>
+#include <linux/cred.h>
 
 #include "bus.h"
 #include "connection.h"
